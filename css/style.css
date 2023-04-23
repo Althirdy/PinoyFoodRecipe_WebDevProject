@@ -1,0 +1,349 @@
+/* POPPINS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* START OF ROOT */
+
+:root {
+    --main-ff-: 'Poppins', sans-serif;
+    --main-text-color: #F4EBEB;
+    --secondary-text-color: #2F2C2C;
+    --tertiary-txt-color: #362E2E;
+    --nav-color: #2EAF7D;
+    --txt-weight-200: 200;
+    --txt-weight-regular: 400;
+    --txt-weight-medium: 500;
+    --txt-weight-SemiBold: 600;
+    --txt-weight-Bold: 700;
+    --txt-weight-ExtraBold: 800;
+    --txt-black: 900;
+    --txt-stats-color: #449342;
+
+}
+
+/* END OF ROOT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--main-ff-);
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    overflow-x: hidden;
+}
+
+/* ----------------NAVBAR START */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15rem;
+    z-index: 999;
+    transition: transform 0.2s;
+}
+.nav_hidden{
+    transform: translateY(calc(-1 * 9vh));
+}
+
+.logo_side {
+    display: flex;
+    align-items: center;
+}
+
+.logo_side>a {
+    color: var(--main-text-color);
+    font-weight: var(--txt-black);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* -----------------Links */
+.navbar {
+    display: flex;
+    gap: 2rem;
+
+}
+
+
+.navbar a {
+    font-weight: var(--txt-weight-medium);
+    font-size: 1.1rem;
+    color: var(--main-text-color);
+    transition: all 200ms ease-in-out;
+}
+
+.navbar a:hover {
+    opacity: .7;
+
+}
+
+/* ----------------------TOGGLE */
+.toggle {
+    z-index: 2;
+    right: 2rem;
+    position: absolute;
+    background-image: url(../icon/bars-Solid.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 30px;
+    width: 20px;
+    transition: all 100ms ease-in-out;
+    display: none;
+}
+
+.show_toggle {
+    background-image: url(../icon/xmark-solid.png);
+}
+
+/* --------END NAVBAR */
+
+/* ------- Main(Hero_ section) Start */
+
+.bg {
+    height: 70vh;
+    background-image: url(../icon/images/hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding-inline: .2rem;
+}
+
+.bg>h2 {
+    color: var(--main-text-color);
+    font-size: 4rem;
+    max-width: 600px;
+}
+
+.bg>p {
+    color: var(--main-text-color);
+    font-size: 1.3rem;
+    font-weight: var(--txt-weight-300);
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.btn_container {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: var(--txt-weight-SemiBold);
+    cursor: pointer;
+}
+
+
+.btn_about {
+    background-color: var(--main-text-color);
+    color: var(--secondary-text-color);
+    transition: color 100ms ease-in-out;
+}
+
+
+.btn_rec {
+    background-color: var(--nav-color);
+    color: var(--main-text-color);
+    transition: color 100ms ease-in-out;
+}
+
+.btn_about:hover{
+    background-color: var(--secondary-text-color);
+    color: var(--main-text-color);
+}
+
+.btn_rec:hover{
+    background-color: var(--main-text-color);
+    color: var(--nav-color);
+}
+
+
+/* ----START OF STATS */
+
+.stats {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    width: 100%;
+    max-width: 1800px;
+    margin-inline: auto;
+    padding-inline: .7rem;
+}
+
+.stats_container {
+    width: 250px;
+}
+
+.stats_container>h1 {
+    font-size: 4.3rem;
+    color: var(--txt-stats-color);
+}
+
+.stats_container>p {
+    font-size: 1.3rem;
+    color: var(--secondary-text-color);
+}
+
+
+
+
+/* --END OF STATS */
+
+/* -------------Main(Hero_ section) */
+/* --------RECIPE */
+
+.recipe{
+    margin-top: 5vh;
+    max-width: 1500px;
+    margin-inline: auto;
+    height: 100vh;
+    padding: 1rem;
+}
+.recipe>h1{
+    color: var(--secondary-text-color);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.Card{
+    width: 20%;
+    display: inline;
+}
+.Card img{
+    width: 250px;
+    border-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Card>p{
+    color: var(--tertiary-txt-color);
+}
+.Card>h3{
+    color: var(--secondary-text-color);
+}
+.desc{
+    display: flex;
+    gap: 10px;
+}
+
+
+/* -----------RESPONSIVE */
+/* ---------phone */
+
+
+
+/* ----tablet */
+@media screen and (max-width:769px) {
+
+    /* ---------Navbar */
+    .navbar {
+        position: absolute;
+        width: 100%;
+        background-color: rgb(32, 31, 31);
+        height: 40vh;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all 500ms ease-in-out;
+    }
+
+    .show {
+        transform: translateY(30%);
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .navbar a {
+        font-size: 1.3rem;
+    }
+    nav {
+        padding-inline: 0rem;
+    }
+    .logo_side>a{
+        padding-left: 1rem;
+    }
+    /* -----------END OF NAVBAR */
+    /* -----------main Description Start */
+    .bg>h2{
+        font-size: 3rem;
+    }
+    .bg>p{
+        font-size: 1.2rem;
+    }
+
+    /* ------------End main Description */
+
+    /* ------------STATS */
+    .stats_container>p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .stats_container>h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .stats_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stats {
+        gap: 2rem;
+    }
+
+    .stats_container>p {
+        font-size: 1rem;
+    }
+    .recipe>h1{
+        font-size: 2rem;
+    }
+    /* ---------END OF STATS */
+    /* CARD */
+    .Card>img{
+        width: 200px;
+        height: 150px;
+    }
+    .desc{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* laptop */
+
+@media screen and (max-width:1250px) and (min-width: 770px)  {
+    nav {
+        padding-inline: 2rem;
+    }
+    .slider{
+        display: none;
+    }
+
+    /*---------END OF NAVBAR  */
+}
