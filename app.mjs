@@ -14,8 +14,9 @@ const toggle = selector(".toggle")
 const count = document.querySelectorAll(".value");
 var interval = 1000;
 const nav = selector("nav")
-const dinner_show = selector(".dinner")
+const lunch_show = selector(".lunch")
 const breakfast_show = selector(".breakfast")
+const dinner_show=selector(".dinner")
 //----------------live count
 
 count.forEach(n => {
@@ -56,16 +57,17 @@ window.addEventListener("scroll", () => {
 })
 
 // ---showing- of-data
-const  display_dishes = (start, end,classGlide) => {
+const display_dishes = (start, end, classGlide) => {
     const show = data.slice(start, end)
-    const show_display =show.map(n => (
-        ` <div class="Card" id=${n.id}>
-    <img src="${n.image}" alt="">
-    <h3>${n.dish}</h3>
-    <div class="desc">
-    <p>${n.servings}</p>
-    <p>Cook Time: ${n.cook_time}</p>
-    </div>
+    const show_display = show.map(n => (
+    `<div class="Card" >
+             <img src="${n.image}" alt="">
+             <h3>${n.dish}</h3>
+             <p>${n.servings}</p>
+         <div class="desc">
+             <p>Cook Time: ${n.cook_time}</p>
+             <div class="open_recipe" id=${n.id} ></div>
+        </div>
     </div>`
     ))
 
@@ -73,17 +75,16 @@ const  display_dishes = (start, end,classGlide) => {
 
 }
 
-display_dishes(10,20,breakfast_show);
-display_dishes(0,10,dinner_show)
+display_dishes(10, 20, breakfast_show);
+display_dishes(0, 10, lunch_show)
+display_dishes(20,30,dinner_show)
+// ----------------TESTING FOR CLICK
 
-// TESTING for click
-
-const card = document.querySelectorAll(".Card");
+const card = document.querySelectorAll(".open_recipe");
 
 card.forEach(n => {
     n.addEventListener('click', () => {
         console.log(n.id)
-
     })
 
 })
@@ -131,7 +132,7 @@ function glid(class_for_glide, dots) {
             breakpoint: 350,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 2,
+                slidesToShow: 1.8,
                 slidesToScroll: 'auto',
                 itemWidth: 50,
                 duration: 0.25
@@ -172,5 +173,6 @@ function glid(class_for_glide, dots) {
 
 } //<<<< FUNCTION FOR GLIDE 
 
-glid("dinner", "dots_dinner") //dinner
+glid("lunch", "dots_lunch") //lunch
 glid("breakfast", "dots_breakfast")//breakfast
+glid("dinner","dots_dinner")//dinner 
