@@ -243,7 +243,7 @@ nav {
 }
 .desc{
     display: flex;
-    gap: 10px;
+    gap: 1.5rem;
 }
 
 .desc>.open_recipe{
@@ -255,11 +255,84 @@ nav {
 
 /* -----------RESPONSIVE */
 /* ---------phone */
+@media screen and (max-width: 449px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        background-color: rgb(32, 31, 31);
+        height: 40vh;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all 500ms ease-in-out;
+    }
+    .show {
+        transform: translateY(30%);
+    }
 
+    .toggle {
+        display: block;
+    }
+    nav{
+        padding: 0;
+    }
+    .logo_side>a{
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+    /* CONTENT HERO SEC */
+    .bg>h2{
+        font-size: 2.5rem;
+    }
+    .bg>p{
+        font-size: 1rem;
+    }
+    .btn{
+        padding: 4px 10px;
+    }
+
+    .btn_about{
+        font-size: 1rem;
+    }
+
+    .btn_rec{
+        font-size: 1rem;
+    }
+    /* -------Stats */
+    .stats_container>h1{
+        font-size: 2.5rem;
+    }
+    .stats_container>p{
+        font-size: 1rem;
+    }
+    /* RECIPE */
+    .recipe>h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .glider-contain{
+        margin-block: 1rem;
+    }
+    .Card img{
+        width: 180px;
+        height: 130px;
+      
+    }
+    .Card>h3{
+        font-size: 1.1rem;
+    }
+    .Card>p, .desc>p{
+        font-size: .8rem;
+    }
+}
 
 
 /* ----tablet */
-@media screen and (max-width:769px) {
+@media screen and (max-width:769px) and (min-width: 450px){
 
     /* ---------Navbar */
     .navbar {

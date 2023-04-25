@@ -61,7 +61,7 @@ const display_dishes = (start, end, classGlide) => {
     const show = data.slice(start, end)
     const show_display = show.map(n => (
     `<div class="Card" >
-             <img src="${n.image}" alt="">
+             <img src="${n.image}" alt="" class="dishes">
              <h3>${n.dish}</h3>
              <p>${n.servings}</p>
          <div class="desc">
@@ -118,10 +118,10 @@ function glid(class_for_glide, dots) {
         dots: `.${dots}`,
         responsive: [{
             // screens greater than >= 775px
-            breakpoint: 250,
+            breakpoint: 200,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 1,
+                slidesToShow: 1.3,
                 slidesToScroll: 'auto',
                 itemWidth: 50,
                 duration: 0.25
@@ -129,7 +129,7 @@ function glid(class_for_glide, dots) {
         },
         {
             // screens greater than >= 775px
-            breakpoint: 350,
+            breakpoint: 400,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 1.8,
@@ -140,7 +140,18 @@ function glid(class_for_glide, dots) {
         },
         {
             // screens greater than >= 775px
-            breakpoint: 760,
+            breakpoint: 600,
+            settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2.5,
+                slidesToScroll: 'auto',
+                itemWidth: 50,
+                duration: 0.25
+            }
+        },
+        {
+            // screens greater than >= 775px
+            breakpoint: 800,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 3,
