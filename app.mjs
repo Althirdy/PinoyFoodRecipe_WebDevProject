@@ -121,7 +121,7 @@ function glid(class_for_glide, dots) {
             breakpoint: 200,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 1.3,
+                slidesToShow: 1.5,
                 slidesToScroll: 'auto',
                 itemWidth: 50,
                 duration: 0.25
