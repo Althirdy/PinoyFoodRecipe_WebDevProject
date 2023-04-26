@@ -34,8 +34,11 @@ html {
   }
 body {
     overflow-x: hidden;
-}
 
+}
+.contain{
+    position: relative;
+}
 /* ----------------NAVBAR START */
 nav {
     position: fixed;
@@ -246,16 +249,24 @@ nav {
     gap: 1.5rem;
 }
 
-.desc>.open_recipe{
+/* .desc>.open_recipe{
     width: 25px;
     height: 25px;
     background-image: url(/icon/direct.png);
     background-size: cover;
-}
+} */
+
+/* ------------Footer */
+
+
+
+
+
+
 
 /* -----------RESPONSIVE */
 /* ---------phone */
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 399px) {
     .navbar {
         position: absolute;
         width: 100%;
@@ -307,7 +318,10 @@ nav {
         font-size: 2.5rem;
     }
     .stats_container>p{
-        font-size: 1rem;
+        font-size: .8rem;
+    }
+    .stats_container{
+        width: 100px;
     }
     /* RECIPE */
     .recipe>h1{
@@ -332,7 +346,7 @@ nav {
 
 
 /* ----tablet */
-@media screen and (max-width:769px) and (min-width: 450px){
+@media screen and (max-width:769px) and (min-width: 400px){
 
     /* ---------Navbar */
     .navbar {
@@ -375,14 +389,14 @@ nav {
     .bg>p{
         font-size: 1.2rem;
     }
+    .stats{
+        justify-content: center;
+    }
 
     /* ------------End main Description */
 
     /* ------------STATS */
-    .stats_container>p {
-        font-size: 1rem;
-        text-align: center;
-    }
+    
 
     .stats_container>h1 {
         font-size: 3rem;
@@ -392,6 +406,7 @@ nav {
     .stats_container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .stats {
@@ -399,7 +414,7 @@ nav {
     }
 
     .stats_container>p {
-        font-size: 1rem;
+        font-size: .88rem;
     }
     .recipe>h1{
         font-size: 2rem;
@@ -414,6 +429,10 @@ nav {
         width: 15px;
         height: 15px;
     }
+    .stats{
+        justify-content: center;
+    }
+    
 }
 
 /* laptop */
