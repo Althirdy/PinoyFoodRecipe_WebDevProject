@@ -399,7 +399,7 @@ const Data = [{
   category: 'dinner',
   prep_time: '10 mins',
   cook_time: '25 mins',
-  serving: '3 servings',
+  servings: '3 servings',
   ingredients: ['1 lb string beans sitaw, cut in 2 inch length', '1/4 lb pork belly thinly sliced (optional)', '1/2 cup soy sauce', '1/3 cup vinegar',
     '1 piece onion (thinly sliced lengthwise)', '4 to 6 cloves garlic', '1/2 teaspoon ground black pepper',
     '1 cup water'],
