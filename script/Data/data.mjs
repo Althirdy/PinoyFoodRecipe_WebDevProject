@@ -1,4 +1,5 @@
-const Data = [{
+
+ const Data = [{
   id: 1,
   dish: "Chicken Adobo",
   description: 'Chicken slices cooked in soy sauce and vinegar with garlic. This is a delicious Filipino chicken dish that you can eat for lunch with warm white rice.',
@@ -541,9 +542,5 @@ const Data = [{
 
 
 
-
-
-
-
-
 export default Data
+

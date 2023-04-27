@@ -1,7 +1,6 @@
-import Data from "./data.mjs";
+import feature_dishes from "./Data/feature_dishes.mjs"
 
-
-const data = Data
+const data = feature_dishes
 
 
 const selector = (name) => {
@@ -9,43 +8,11 @@ const selector = (name) => {
     return base;
 }
 
-const navbar = selector(".navbar");
-const toggle = selector(".toggle")
-const count = document.querySelectorAll(".value");
-var interval = 1000;
+
+console.log(data)
 const nav = selector("nav")
-const lunch_show = selector(".lunch")
-const breakfast_show = selector(".breakfast")
-const dinner_show=selector(".dinner")
-//----------------live count
-
-count.forEach(n => {
-    var startvalue = 0
-    var endValue = parseInt(n.getAttribute("data-val"));
-    var duration = Math.floor(interval / endValue);
-    let counter = setInterval(() => {
-        startvalue += 1;
-        n.textContent = `${startvalue}+`
-        if (startvalue == endValue) {
-            clearInterval(counter)
-
-        }
-    }, duration)
-
-})
-
-// END OF LIVE COUNT
-//-----------Toggle Navbar
-toggle.addEventListener('click', () => {
-    navbar.classList.toggle("show");
-    toggle.classList.toggle("show_toggle")
-
-
-})
-
-
-
-// ---------for Navbar show
+const feature = selector(".featured_dish")
+// NAVBAR HIDE 
 var lasttop = window.scrollY
 window.addEventListener("scroll", () => {
     if (lasttop < window.scrollY) {
@@ -56,7 +23,6 @@ window.addEventListener("scroll", () => {
     lasttop = window.scrollY
 })
 
-// ---showing- of-data
 const display_dishes = (start, end, classGlide) => {
     const show = data.slice(start, end)
     const show_display = show.map(n => (
@@ -74,41 +40,8 @@ const display_dishes = (start, end, classGlide) => {
 
 }
 
-display_dishes(10, 20, breakfast_show);
-display_dishes(0, 10, lunch_show)
-display_dishes(20,30,dinner_show)
-// ----------------TESTING FOR CLICK
 
-const card = document.querySelectorAll(".Card");
-
-card.forEach(n => {
-    n.addEventListener('click', () => {
-        console.log(n.id)
-    })
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -----------For glider
-
+display_dishes(0,10,feature)
 function glid(class_for_glide, dots) {
     new Glider(document.querySelector(`.${class_for_glide}`), {
         slidesToShow: 2,
@@ -120,7 +53,7 @@ function glid(class_for_glide, dots) {
             breakpoint: 200,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 1.5,
+                slidesToShow: 1.8,
                 slidesToScroll: 'auto',
                 itemWidth: 50,
                 duration: 0.25
@@ -181,8 +114,7 @@ function glid(class_for_glide, dots) {
         ]
     });
 
-} //<<<< FUNCTION FOR GLIDE 
+}
 
-glid("lunch", "dots_lunch") //lunch
-glid("breakfast", "dots_breakfast")//breakfast
-glid("dinner","dots_dinner")//dinner 
+
+glid("featured_dish","dots_featured_dish")

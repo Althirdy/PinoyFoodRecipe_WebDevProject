@@ -228,6 +228,7 @@ nav {
 .Card{
     width: 20%;
     display: inline;
+    padding-bottom: 1rem;
 }
 .Card img{
     width: 250px;
@@ -243,6 +244,7 @@ nav {
 }
 .Card>h3{
     color: var(--secondary-text-color);
+    width: 70%;
 }
 .desc{
     display: flex;

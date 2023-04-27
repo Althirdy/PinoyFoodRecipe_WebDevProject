@@ -1,0 +1,157 @@
+@import url("./style.css");
+
+
+:root{
+    --black-txt-100: #2F2C2C;
+    --black-txt-200: #362E2E;
+    --txt-300: #6A5454;
+    --txt-400: #5D67C0;
+    --brdr-bot-recipe: #F4EBEB;
+    --brdr-steps: #E8DADA;
+    --txt-weight-200: 200;
+    --txt-weight-regular: 400;
+    --txt-weight-medium: 500;
+    --txt-weight-SemiBold: 600;
+    --txt-weight-Bold: 700;
+    --txt-weight-ExtraBold: 800;
+    --txt-black: 900;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--main-ff-);
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    overflow-x: hidden;
+
+}
+
+.hero_section{
+    padding: 6rem 1rem 3rem 1rem;
+}
+
+.image_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_description>img{
+    width: 80%;
+    max-width: 470px;
+    border-radius: 10px;
+}
+
+.right_side>h1{
+    font-size: 2.5rem;
+    font-weight: var(--txt-weight-ExtraBold);
+    color: var(--black-txt-100);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.right_side>p{
+    color: var(--black-txt-200);
+    font-size: var(--font-size-200);
+    text-align: center;
+}
+
+.right_side{
+    padding-top: 1rem;
+}
+/* Info-------prep-cook-servings */
+.info{
+    margin-inline: auto;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.info_icon>img{
+    width: 35%;
+    max-width: 40px;
+}
+
+
+.info_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.info_icon>h4{
+    color: var(--black-txt-200);
+    font-weight: var(--txt-weight-SemiBold);
+}
+
+.info_icon>p{
+    margin-top: -5px;
+    color: var(--black-txt-200);
+}
+/* -----ingredients and Procedure ----- */
+.ingred_proced, .procedure{
+    margin-top: 3rem;
+    margin-inline: auto;
+}
+/* ----Ingredients */
+.ingredients ,.procedure>h2{
+    text-align: center;
+}
+
+.ing_proc_h2{
+    color: var(--black-txt-100);
+    font-size: 1.8rem;
+}
+
+.ingredients>ul>li{
+    padding-block: .8rem;
+    color: var(--black-txt-100);
+    border-bottom: 1px solid var(--brdr-bot-recipe);
+}
+/* -----procedure */
+
+.steps{
+    margin-block: 2rem;
+    text-align: center;
+}
+
+.steps>h4{
+    color: var(--txt-400);
+    position: relative;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+/* .steps>h4::after{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 2px;
+    top: 50%;
+    left: 65px;
+    background-color: var(--brdr-steps);
+} */
+
+.steps>p{
+    color: var(--txt-300);
+    font-size: .9rem;
+}
+
+/* ----- Features */
+
+.featured>h1{
+    text-align: center;
+    color: var(--black-txt-100);
+    font-size: 1.8rem;
+}
