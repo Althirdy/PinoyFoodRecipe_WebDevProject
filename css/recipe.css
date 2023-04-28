@@ -5,7 +5,7 @@
     --black-txt-100: #2F2C2C;
     --black-txt-200: #362E2E;
     --txt-300: #6A5454;
-    --txt-400: #5D67C0;
+    --txt-400: #BAAA1A;
     --brdr-bot-recipe: #F4EBEB;
     --brdr-steps: #E8DADA;
     --txt-weight-200: 200;
@@ -37,18 +37,21 @@ body {
 }
 
 .hero_section{
-    padding: 6rem 1rem 3rem 1rem;
+    padding: 6rem 1rem 1rem 1rem;
 }
 
 .image_description{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1294px;
+    margin-inline: auto;
 }
 
 .image_description>img{
     width: 80%;
-    max-width: 470px;
+    max-width: 450px;
     border-radius: 10px;
 }
 
@@ -56,17 +59,18 @@ body {
     font-size: 2.5rem;
     font-weight: var(--txt-weight-ExtraBold);
     color: var(--black-txt-100);
-    text-align: center;
     margin-bottom: 1rem;
 }
 .right_side>p{
     color: var(--black-txt-200);
     font-size: var(--font-size-200);
-    text-align: center;
+    max-width: 650px;
 }
 
 .right_side{
     padding-top: 1rem;
+    text-align: center;
+
 }
 /* Info-------prep-cook-servings */
 .info{
@@ -101,9 +105,15 @@ body {
     color: var(--black-txt-200);
 }
 /* -----ingredients and Procedure ----- */
+.ingred_proced{
+    max-width: 1294px;
+    width: 100%;
+}
+
 .ingred_proced, .procedure{
     margin-top: 3rem;
     margin-inline: auto;
+    
 }
 /* ----Ingredients */
 .ingredients ,.procedure>h2{
@@ -123,7 +133,7 @@ body {
 /* -----procedure */
 
 .steps{
-    margin-block: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -150,8 +160,84 @@ body {
 
 /* ----- Features */
 
+.featured{
+    width: 100%;
+    max-width: 1294px;
+    margin-inline: auto;
+}
 .featured>h1{
     text-align: center;
     color: var(--black-txt-100);
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  
+}
+
+
+
+/* ---------Media query */
+
+@media screen and (min-width:991px){
+    .image_description{
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .right_side{
+        text-align: start;
+    }
+    .ingred_proced{
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .ingredients{
+        width: 500px;
+    }
+    .procedure{
+        width: 500px;
+        margin: 0;
+    }
+    .steps{
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .right_side{
+        width: 700px;
+    }
+    .right_side>h1{
+        font-size: 3rem;
+    }
+    .right_side>p{
+        font-size: 1.2rem;
+    }
+    .info{
+        margin: 1.5rem 0;
+    }
+
+    .ing_proc_h2{
+        font-size: 2rem;
+    }
+    .steps>h4{
+        font-size: 1.3rem;
+    }
+    .steps>p{
+        font-size: 1.1;
+    }
+    .ingredients>ul>li{
+        text-align: start;
+    }
+    .ingred_proced{
+        justify-content: space-between;
+    }
+
+    .image_description{
+        justify-content: space-between;
+    }
+    .procedure{
+        width: 700px;
+    }
+
 }

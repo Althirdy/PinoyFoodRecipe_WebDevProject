@@ -240,7 +240,7 @@ nav {
 }
 
 .Card>p{
-    color: var(--tertiary-txt-color);
+    color: var(--secondary-txt-color);
 }
 .Card>h3{
     color: var(--secondary-text-color);
@@ -355,11 +355,12 @@ nav {
         position: absolute;
         width: 100%;
         background-color: rgb(32, 31, 31);
-        height: 40vh;
+        height: 30vh;
         display: flex;
         gap: 1rem;
         flex-direction: column;
-        justify-content: center;
+        padding-top: 5.5rem;
+        /* justify-content: center; */
         align-items: center;
         z-index: 1;
         transform: translateY(-100%);
@@ -423,6 +424,9 @@ nav {
     }
     /* ---------END OF STATS */
     /* CARD */
+    .Card>h3{
+        font-size: 1rem;
+    }
     .Card>img{
         width: 200px;
         height: 150px;

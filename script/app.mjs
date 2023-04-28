@@ -81,7 +81,7 @@ const card = document.querySelectorAll(".Card");
 
 card.forEach(n => {
     n.addEventListener('click', () => {
-        console.log(n.id)
+        location.href='recipe.html'
     })
 
 })

@@ -1,6 +1,6 @@
 const feature_dishes = [{
     id: 1,
-    dish: "Crispy Pork Belly Chicharon",
+    dish: "Crispy Pork Belly",
     description: ' Crispy Pork Belly Chicharon might look like your regular lechon kawali. However, it is way crispier',
     category: 'Featured Dishes',
     Prep_time: '1 hour',
@@ -46,7 +46,7 @@ const feature_dishes = [{
 },
 {
     id: 4,
-    dish: "Filipino Chicken Adobo",
+    dish: "Filipino Adobo",
     description: '"Adobo" comes from the Spanish word "adobar," which means "marinate." In Filipino cuisine, the marinade for a chicken adobo recipe is traditionally vinegar-based. Serve this flavorful dish with a simple Almond Rice Pilaf or a Veggie Rice Bowl for color and flavor.',
     category: 'Featured Dishes',
     prep_time: '30 mins',

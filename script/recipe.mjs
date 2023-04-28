@@ -14,6 +14,8 @@ const nav = selector("nav")
 const feature = selector(".featured_dish")
 // NAVBAR HIDE 
 var lasttop = window.scrollY
+
+
 window.addEventListener("scroll", () => {
     if (lasttop < window.scrollY) {
         nav.classList.add("nav_hidden")
@@ -64,7 +66,7 @@ function glid(class_for_glide, dots) {
             breakpoint: 400,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 1.8,
+                slidesToShow: 2,
                 slidesToScroll: 'auto',
                 itemWidth: 50,
                 duration: 0.25
@@ -105,7 +107,7 @@ function glid(class_for_glide, dots) {
             // screens greater than >= 1024px
             breakpoint: 1300,
             settings: {
-                slidesToShow: 5,
+                slidesToShow: 4.7,
                 slidesToScroll: 1,
                 itemWidth: 150,
                 duration: 0.25
@@ -118,3 +120,5 @@ function glid(class_for_glide, dots) {
 
 
 glid("featured_dish","dots_featured_dish")
+
+// -------------------------
