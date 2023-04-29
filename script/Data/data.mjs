@@ -3,14 +3,14 @@
   id: 1,
   dish: "Chicken Adobo",
   description: 'Chicken slices cooked in soy sauce and vinegar with garlic. This is a delicious Filipino chicken dish that you can eat for lunch with warm white rice.',
-  Category: 'lunch',
-  Prep_time: '5 mins',
+  category: 'lunch',
+  prep_time: '5 mins',
   cook_time: '30 mins',
   servings: '4 servings',
   ingredients: ['2 lbs chicken', '3 pieces dried bay leaves', '8 tablespoons soy sauce',
     '4 tablespoon white vinegar', '5 gloves garlic', '1 1/2 cups water', '3 tabelspoons cooking oil',
     ' 1 teaspoon sugar', '1/4 teaspoon salt', '1 teaspoon whole pppercorn'],
-  Steps: ['Combine chicken, soy sauce, and garlic in a large bowl. Mix well. Marinate the chicken for at least 1 hour. Note: the longer the time, the better',
+  steps: ['Combine chicken, soy sauce, and garlic in a large bowl. Mix well. Marinate the chicken for at least 1 hour. Note: the longer the time, the better',
     'Heat a cooking pot. Pour cooking oil.', 'When the oil is hot enough, pan-fry the marinated chicken for 2 minutes per side.', 'Pour-in the remaining marinade, including garlic. Add water. Bring to a boil',
     'Add dried bay leaves and whole peppercorn. Simmer for 30 minutes or until the chicken gets tender', 'Add vinegar. Stir and cook for 10 minutes.',
     'Put-in the sugar, and salt. Stir and turn the heat off.Serve hot. Share and Enjoy!'],
@@ -27,7 +27,7 @@
   ingredients: ['2 lbs. chicken', '1 tablespoon curry powder', '1 piece potato ', '4 cloves garlic',
     '2 stalks celery', '1 piece red bell pepper', '2 pieces long green pepper', '1 piece onion',
     '2 thumbs ginger', '2 cups coconut milk', '1/2 cup all-purpose cream', '1 cup water', 'fish sauce and ground black pepper to taste'],
-  Steps: ['Heat oil in a pan. Fry potato for 1 minute per side. Remove from the pan. Set aside.', 'Using the remaining oil, saute garlic, onion, celery, and ginger until onion softens.',
+  steps: ['Heat oil in a pan. Fry potato for 1 minute per side. Remove from the pan. Set aside.', 'Using the remaining oil, saute garlic, onion, celery, and ginger until onion softens.',
     'Add the chicken pieces. Saute until the outer part of the chicken turns light brown.', 'Add 1 tablespoon fish sauce. Continue sautéing for 1 minute.',
     'Pour-in coconut milk and water. Let boil.', 'Add curry powder. Stir until the powder is completely diluted. Cover the pot and continue cooking between low to medium heat until the liquid reduces to half',
     'Add the red bell pepper and pan fried-potato. Cook for 5 minutes.', 'Season with fish sauce and ground black pepper as needed. You can also add all-purpose cream if desired.',
@@ -44,7 +44,7 @@
   servings: '6 servings',
   ingredients: ['2 lbs chicken', '12 ounces pineapple chunks', '2 pieces tomato', '1 cup bell pepper', '1 piece carrot',
     '2 1/2 tablespoon fish sauce', '1/2 cup fresh milk', '2 tablespoon garlic', '1 piece onion', '2 tablespoon cooking oil'],
-  Steps: ['Marinate the chicken in pineapple juice/concentrate (derived from the can of pineapple chunks) for 20 to 30 minutes',
+  steps: ['Marinate the chicken in pineapple juice/concentrate (derived from the can of pineapple chunks) for 20 to 30 minutes',
     'Pour the cooking oil in a cooking pot / casserole then apply heat', '3.Sauté the garlic, onion, and tomatoes', 'Put-in the chicken and cook until color of the outer part turns light brown',
     'Add the pineapple juice/concentrate marinade and fresh milk then bring to a boil', 'Add the pineapple chunks and simmer until the chicken is tender and half of the liquid evaporates (about 20 to 30 minutes).',
     'Put-in the carrots and simmer for 5 minutes', 'Add the bell pepper and fish sauce then simmer for 3 minutes', 'Remove from the cooking pot / casserole and transfer to a serving dish.',
@@ -61,7 +61,7 @@
   servings: '6 servings',
   ingredients: ['1 whole chicken', '36 ounces rice washing', '1/2 piece green papaya', '1 tablespoon garlic', '1 piece onion', '1 thumb ginger',
     '2 tablespoon fish sauce', '1 cup Hot pepper leaves', '3 tablespoons fish sauce', '1/4 teaspoon ground black pepper'],
-  Steps: ['Sauté the garlic, onion, and ginger', 'Put-in the chicken and cook until color turns light brown', 'Add the fish sauce. Stir. Pour rice washing into the cooking pot. Let boil. Cover the pot and simmer for 45 minutes. Note: add water if needed.',
+  steps: ['Sauté the garlic, onion, and ginger', 'Put-in the chicken and cook until color turns light brown', 'Add the fish sauce. Stir. Pour rice washing into the cooking pot. Let boil. Cover the pot and simmer for 45 minutes. Note: add water if needed.',
     'Add green papaya. Cook for 5 minutes', 'Add the hot pepper leaves or malunggay leaves. Stir and cook for 1 minute.', 'Season with ground black pepper. Note you can also add fish sauce or salt if needed.',
     'Transfer to a serving bowl. Serve hot. Share and enjoy!'],
   image: 'https://panlasangpinoy.com/wp-content/uploads/2018/11/Chicken-Tinola-Soup-Recipe-728x750.jpg',
@@ -77,7 +77,7 @@
   ingredients: ['2 lbs chicken', '1 piece Knorr Chicken Cube', '2 pieces carrots', '2 pieces potato', '8 ounces tomato sauce',
     '2 pieces bell pepper', '4 tablespoons liver spread', '1 piece tomato', '3 pieces chili pepper', '1 piece onion', '3 cloves garlic'
     , '3 tablespoons cheddar cheese ', '1 ½ cups water', '4 tablespoons cooking oil'],
-  Steps: ['Start by pan-frying the potato and carrots. Heat oil in a pan. Add potato. Fry each side for 1 minute. Remove from the pan and put in a bowl lined with paper towel. Set aside. Do the same thing with the carrots.',
+  steps: ['Start by pan-frying the potato and carrots. Heat oil in a pan. Add potato. Fry each side for 1 minute. Remove from the pan and put in a bowl lined with paper towel. Set aside. Do the same thing with the carrots.',
     'Using the remaining oil, fry the chicken for 1 ½ minutes per side. Remove from the pan. Set aside.', 'Saute onion and garlic. Add tomato. Continue to saute while stirring until tomato and onion softens.',
     'Add chicken and pour-in tomato sauce and water. Let boil.', 'Stir and then add Knorr Chicken Cube and chili pepper. Cover the pan. Cook between low to medium heat for 15 minutes.',
     'Turn the chicken pieces over to equally cook the opposite side. Add liver spread. Stir. Cover and cook for 20 minutes.', 'Add bell peppers and cheese. Cook for 3 minutes.',
@@ -94,7 +94,7 @@
   servings: '6 servings',
   ingredients: ['2 lbs. pork shoulder', '1 1/4 cups pork blood', '1 piece Knorr Pork Cube', '4 pieces long peppers', '2 pieces onion', '6 cloves garlic',
     '2 cups water', '¾ cup white vinegar', '3 pieces dried bay leaves', '3 tablespoons cooking oil', '1 tablespoon granulated white sugar', 'Salt and ground black pepper to taste'],
-  Steps: ['Heat oil in a cooking pot', 'Saute onion for 30 seconds. Add garlic. Continue to cook until onion softens.', 'Add pork. Saute for 3 to 5 minutes.',
+  steps: ['Heat oil in a cooking pot', 'Saute onion for 30 seconds. Add garlic. Continue to cook until onion softens.', 'Add pork. Saute for 3 to 5 minutes.',
     'Pour water. Let boil. Add bay leaves and vinegar. Let the liquid re-boil.', 'Add Knorr Pork Cube. Stir. Cover and simmer for 1 hour. Note: add water as needed.',
     'Add long green peppers and pour pork blood into the pot. Stir. Continue to cook between low to medium heat for 15 minutes while stirring every 3 minutes.',
     'Add sugar and season with salt and ground black pepper.'],
@@ -111,7 +111,7 @@
   ingredients: ['3 lbs. pork baby back ribs', '3 bunches bok choy', '1 1/2 liter water', '44 grams Knorr Sinigang sa Sampaloc with Gabi',
     '15 counts string beans', '8 okra', '1 eggplant', '3 long green chili pepper', '1 cup daikon radish ', '2 tomato', '1 onion', '3 tablespoons cooking oil',
     'Fish sauce and ground black pepper to taste'],
-  Steps: ['Heat oil in a large pot. Saute onion and tomato until the layers of the onion starts to separate.', 'Add pork spare ribs. Continue sautéing until the pork turns light brown in color.',
+  steps: ['Heat oil in a large pot. Saute onion and tomato until the layers of the onion starts to separate.', 'Add pork spare ribs. Continue sautéing until the pork turns light brown in color.',
     'Pour water. Cover the pot. Let the water boil. Adjust heat to low setting and continue boiling for 30 minutes.', 'Add Knorr Sinigang sa Sampaloc with Gabi recipe mix and daikon radish. Stir and cover the pot. Continue cooking until the pork gets tender.',
     'Add chili pepper, string beans, okra, and eggplant. Cook for 12 minutes.', 'Add pechay. Cook for 3 minutes', 'season with fish sauce and ground black pepper.',
   ],
@@ -127,7 +127,7 @@
   servings: '4 servings',
   ingredients: ['4 pieces pork chops', '5 tablespoons soy sauce', '2 pieces lime', '1/2 cup cooking oil', '2 pieces onions', ' 1/2 cups water',
     '1/2 teaspoon granulated white sugar', 'Salt and pepper to taste'],
-  Steps: ['combine pork chops, soy sauce, and lime juice in a large bowl or resealable bag. Marinate for at least 1 hour.', 'Heat a pan then pour-in cooking oil.',
+  steps: ['combine pork chops, soy sauce, and lime juice in a large bowl or resealable bag. Marinate for at least 1 hour.', 'Heat a pan then pour-in cooking oil.',
     'Pan-fry the marinated pork chops in medium heat for 3 minutes per side.',
     'Remove excess oil. Pour-in the remaining marinade and water and let boil. Simmer for 45 minutes or until the pork is tender. Note: Add water as needed.',
     'Add-in the sugar, salt, and pepper then stir.', 'Put-in the onions and cook for 3 minutes more.', 'Turn-off heat and transfer to a serving plate.'],
@@ -145,7 +145,7 @@
     '1 knob ginger', '3 tablespoons chili flakes', '1/2 teaspoon garlic powder', '1 piece lemon ', '½ cup butter', '¼ lb chicken liver',
     '6 cups water', '3 tablespoons mayonnaise', '1/2 teaspoon salt', '1 piece egg'],
 
-  Steps: ['Pour the water in a pan and bring to a boil Add salt and pepper.', 'Put-in the pigs ears and pork belly then simmer for 40 minutes to 1 hour (or until tender).',
+  steps: ['Pour the water in a pan and bring to a boil Add salt and pepper.', 'Put-in the pigs ears and pork belly then simmer for 40 minutes to 1 hour (or until tender).',
     'Remove the boiled ingredients from the pot then drain excess water', 'Grill the boiled pig ears and pork belly until done', 'Chop the pig ears and pork belly into fine pieces',
     'In a wide pan, melt the butter or margarine. Add the onions. Cook until onions are soft.', 'Put-in the ginger and cook for 2 minutes', 'Add the chicken liver. Crush the chicken liver while cooking it in the pan.',
     'Add the chopped pig ears and pork belly. Cook for 10 to 12 minutes', 'Put-in the soy sauce, garlic powder, and chili. Mix well', 'Add salt and pepper to taste',
@@ -155,14 +155,14 @@
 {
   id: 10,
   dish: "Pork Barbecue",
-  descriprtion: 'Filipino skewered marinated pork slices that are grilled to perfection.',
+  description: 'Filipino skewered marinated pork slices that are grilled to perfection.',
   category: 'lunch',
   prep_time: '3 hours',
   cook_time: '15 mins',
   servings: '1:1 Serving',
   ingredients: ['3 lbs. pork shoulder', '2 sachets Knorr SavorRich Pork Liquid Seasoning', '2 tablespoons brown sugar', '½ cup banana ketchup',
     '3 pieces calamansi', '6 cloves garlic', '½ cup soy sauce', '½ teaspoon ground black pepper'],
-  Steps: ['Arrange pork slices in a large bowl.', 'Add Knorr SavorRich, soy sauce, ketchup, sugar, garlic, and ground black pepper. Mix well.', 'Cover and refrigerate for at least 3 hours. Note: marinating the meat longer will provide better results.',
+  steps: ['Arrange pork slices in a large bowl.', 'Add Knorr SavorRich, soy sauce, ketchup, sugar, garlic, and ground black pepper. Mix well.', 'Cover and refrigerate for at least 3 hours. Note: marinating the meat longer will provide better results.',
     'Skewer the marinated meat on a bamboo skewer (also called barbecue stick). Set aside.',
     'Heat-up the grill. Start to grill the pork barbecue for 3 to 5 minutes per side. Continue this step until pork is thoroughly cooked. Note: baste with a mixture of soy sauce, banana ketchup, and vegetable oil after turning the barbecue over.'
   ],
@@ -381,7 +381,7 @@
   id: 21,
   dish: "Tokwa't Baboy",
   description: ' Filling and flavorful, the delightful tokwat baboy is a staple in any Filipino kitchen.',
-  Category: 'dinner',
+  category: 'dinner',
   Prep_time: '20 mins',
   cook_time: '1 hour 30 mins',
   servings: '4 servings',
@@ -389,7 +389,7 @@
     '1 1/2 cup white vinegar', '1/4 cup soy sauce', '1 tablespoon sugar', '1 tablespoon salt',
     '1 tablespoon whole peppercorn', '1 piece onion sliced', '2 stalks scallions cut in 1/2 inch length', '1/8 teaspoon ground black pepper', '5 cups water', '2 cups cooking oil'],
 
-  Steps: ['Pour-in water in a pot and bring to a boil', 'Add salt and whole peppercorn', 'Put-in the pig’s ears and pork belly then simmer until tender (about 30 mins to 1 hour)', 'Pour cooking oil on a separate pan and allow to heat', 'When the oil is hot enough, deep-fry the tofu until color turns golden brown and outer texture is somewhat crispy',
+  steps: ['Pour-in water in a pot and bring to a boil', 'Add salt and whole peppercorn', 'Put-in the pig’s ears and pork belly then simmer until tender (about 30 mins to 1 hour)', 'Pour cooking oil on a separate pan and allow to heat', 'When the oil is hot enough, deep-fry the tofu until color turns golden brown and outer texture is somewhat crispy',
     'Cube the fried tofu and slice the boiled pigs ears and pork belly into bite-sized pieces then set aside', 'Combine the sugar, salt, soy sauce, and vinegar in bowl. Stir.', 'Microwave for 1 minute.', 'Add the ground black pepper, onions, green onions, and chili pepper. Transfer the sauce in a serving bowl.', 'Place the sliced meat and tofu in a serving plate with the bowl of sauce by the side', 'Serve hot! Share and Enjoy!'],
   image: 'https://www.ajinomoto.com.ph/web/wp-content/uploads/2019/02/Tokwat-Baboy.jpg',
 },
@@ -404,7 +404,7 @@
   ingredients: ['1 lb string beans sitaw, cut in 2 inch length', '1/4 lb pork belly thinly sliced (optional)', '1/2 cup soy sauce', '1/3 cup vinegar',
     '1 piece onion (thinly sliced lengthwise)', '4 to 6 cloves garlic', '1/2 teaspoon ground black pepper',
     '1 cup water'],
-  Steps: ['Heat a frying pan or wok then sear the pork.', 'When oil and juice comes out of the pork, add garlic and onions then cook for 2 minutes.', 'Pour-in the soy sauce, vinegar, and water then bring to a boil.', 'Shake-in the ground black pepper and stir.',
+  steps: ['Heat a frying pan or wok then sear the pork.', 'When oil and juice comes out of the pork, add garlic and onions then cook for 2 minutes.', 'Pour-in the soy sauce, vinegar, and water then bring to a boil.', 'Shake-in the ground black pepper and stir.',
     'Cover and simmer for 15 minutes or until the pork is tender.', 'Add the string beans and cook for 3 to 5 minutes.', 'Turn off the heat and transfer to a serving bowl.', 'Serve hot with steamed rice.', 'Share and enjoy!'],
   image: 'https://images.summitmedia-digital.com/yummyph/images/2019/09/25/adobongsitawrecipewithchicken.jpg',
 },
@@ -418,7 +418,7 @@
   servings: '3 servings',
   ingredients: ['2 pieces ampalaya', '1 tbsp garlic', '1/2 tsp ground black pepper', 'salt to taste',
     '2 raw eggs', '18 ounces luke warm water', '1 tomato', '1 onion', '3 tbsp cooking oil'],
-  Steps: ['Place the ampalaya in a large bowl',
+  steps: ['Place the ampalaya in a large bowl',
     'Add salt and lukewarm water then leave for 5 minutes', 'Place the ampalaya in a cheesecloth then squeeze tightly until all liquid drips', 'Heat the pan and place the cooking oil',
     'Saute the garlic, onion, and tomato', 'Add the ampalaya mix well with the other ingredients',
     'Put-in salt and pepper to taste', 'Beat the eggs and pour over the ampalaya then let the eggs cook partially', 'Mix the egg with the other ingredients',
@@ -434,7 +434,7 @@
   cook_time: '15 mins',
   servings: '4 servings',
   ingredients: ['3 lbs. chicken cut into individual pieces', '1 tablespoon salt', '3 cups cooking oil', '1 cup all-purpose flour', '2 teaspoons garlic powder', '¼ teaspoon ground black pepper'],
-  Steps: ['Rub salt all over the chicken. Let it stay for 15 minutes.', 'Heat the oil in a cooking pot.', 'Combine flour,garlic powder, salt, and ground black pepper. Mix well using a fork or a wire whisk. Set aside.',
+  steps: ['Rub salt all over the chicken. Let it stay for 15 minutes.', 'Heat the oil in a cooking pot.', 'Combine flour,garlic powder, salt, and ground black pepper. Mix well using a fork or a wire whisk. Set aside.',
     'Beat the eggs in a large mixing bowl.Continue to beat until all the ingredients are all incorporated. Add half of flour mixture. Whisk. Add the remaining half and whisk until the texture of the batter becomes smooth.', 'Dredge the chicken in flour and then roll it in flour until completely covered. Fry in medium heat for 7 minutes per side.',
     'Remove from the pot and put in a plate lined with paper towel. This will absorb the oil.',
     'Serve with ketchup or gravy.', 'Share and enjoy!'],
@@ -450,7 +450,7 @@
   servings: '3 servings',
   ingredients: ['2 cans 14 ounces white tuna', '1/2 cup mayonnaise', '1 tablespoon parmesan cheese', '1 tablespoon cheddar cheese', '1 medium white onion minced',
     '1/3 teaspoon garlic powder', '1/4 cup minced celery', '1/2 teaspoon granulated white sugar', 'Salt and pepper to taste'],
-  Steps: ['Drain the liquid from the tuna and then place the tuna in a medium mixing bowl.',
+  steps: ['Drain the liquid from the tuna and then place the tuna in a medium mixing bowl.',
     'Add mayonnaise, parmesan and cheddar cheeses, onion, celery, garlic powder, and white sugar. Gently mix to incorporate all the ingredients.', 'Try to taste the mixture and then add salt and pepper as needed.',
     'Serve. You can make sandwiches, wraps, and finger food out of this recipe. Enjoy!'],
   image: 'https://img.taste.com.au/ChmIAzAE/w1200-h630-cfill/taste/2016/11/mediterranean-tuna-salad-31059-1.jpeg',
@@ -467,7 +467,7 @@
     , '1/4 cup red onion thinly sliced', '1/2 cup cooked crumbled bacon', '1/2 cup blue cheese crumbled', '1 avocado peeled, pitted and sliced', '3 tablespoons lemon juice', '2 tablespoons Dijon mustard',
     '3 tablespoons red wine vinegar', '2 teaspoons granulated sugar', '2 tablespoons finely minced shallot', '1/2 teaspoon dried oregano', '1 1/2 teaspoons dried parsley'
     , '2/3 cup olive oil', 'salt and pepper to taste'],
-  Steps: ['Place all the ingredients in a medium bowl and whisk until well combined.',
+  steps: ['Place all the ingredients in a medium bowl and whisk until well combined.',
     'Pour half the dressing into a container and save for later use.', 'Add the chicken breasts to the bowl with the remaining dressing.',
     'Marinate for at least one hour or up to 8 hours.', 'Preheat an outdoor grill or indoor grill to medium high heat. Remove the chicken from the marinade and place on the grill.'
     , 'Cook for 5-6 minutes per side or until chicken is browned and cook through.', 'Let the chicken cool for 5 minutes, then slice.', 'Place the lettuce in a large bowl. Drizzle half of the reserved dressing over the lettuce.'
@@ -483,7 +483,7 @@
   cook_time: '40 mins',
   servings: '2 servings',
   ingredients: ['Sweet Potatoes', 'butter or vegan butter', 'sea salt', 'greek yogurt'],
-  Steps: ['Preheat the oven to 425°F and place a piece of foil on a baking sheet. Use a fork to poke holes into the sweet potatoes, set them on the baking sheet, and roast for 40 to 50 minutes, or until puffed up and soft inside when pierced with a fork.'],
+  steps: ['Preheat the oven to 425°F and place a piece of foil on a baking sheet. Use a fork to poke holes into the sweet potatoes, set them on the baking sheet, and roast for 40 to 50 minutes, or until puffed up and soft inside when pierced with a fork.'],
   image: 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/01/Baked-Sweet-Potato-main-1.jpg',
 },
 {
@@ -496,7 +496,7 @@
   servings: '1:1 serving',
   ingredients: ['6 sheets sushi seaweed', '1 batch prepared sushi rice', '1/2 lb sashimi-grade raw salmon or desired raw fish of choice'
     , '4 oz cream cheese sliced into strips', '1 avocado sliced', 'soy sauce for serving'],
-  Steps: ['Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with a rice paddle.', 'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy right away with soy sauce.'],
+  steps: ['Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with a rice paddle.', 'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy right away with soy sauce.'],
   image: 'https://www.fifteenspatulas.com/wp-content/uploads/2016/06/Homemade-Sushi-3-640x427.jpg',
 },
 {
@@ -513,7 +513,7 @@
     '1/3 cup chopped fresh parsley', '2 bay leaves', '1/2 tsp dried thyme, or 1 Tbsp fresh thyme leaves', 'Salt and freshly ground black pepper',
     '1 1/2 cups chopped frozen or fresh green beans', '1 1/4 cups frozen or fresh corn', '1 cup frozen or fresh peas'],
 
-  Steps: ['Heat olive oil in a large pot over medium-high heat.'
+  steps: ['Heat olive oil in a large pot over medium-high heat.'
     , 'Add onions, carrots, and celery and saute 4 minutes then add garlic and saute 30 seconds longer.'
     , 'Add in broth, tomatoes, potatoes, parsley, bay leaves, thyme and season with salt and pepper to taste.',
     'Bring to a boil, then add green beans.', 'Reduce heat to medium-low, cover and simmer until potatoes are almost fully tender, about 20 - 30 minutes.', 'Add corn and peas and cook 5 minutes longer. Serve warm.Plknife, and enjoy right away with soy sauce.'],
@@ -531,7 +531,7 @@
     '1/2 tablespoon lemon juice, plus more lemon slices for garnish', '3 garlic cloves, minced'
     , 'salt and pepper', '1 teaspoon finely chopped parsley', '1 teaspoon finely chopped dill'],
 
-  Steps: ['Preheat your oven to 375F/190C and let the salmon come to room temperature for 15 minutes. Mix together the melted butter and lemon juice (I use the juice from 1/4 slice of lemon) in a small bowl. Then, place the salmon in baking dish and brush the butter mix all over.'
+  steps: ['Preheat your oven to 375F/190C and let the salmon come to room temperature for 15 minutes. Mix together the melted butter and lemon juice (I use the juice from 1/4 slice of lemon) in a small bowl. Then, place the salmon in baking dish and brush the butter mix all over.'
     , 'Top the salmon with the minced garlic, salt, and pepper, and bake for 12-15 minutes, or until cooked through.'
     , 'Sprinkle the fresh parsley and dill on the salmon before serving.'],
   image: 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2021/01/Baked-Salmon-8.jpg',

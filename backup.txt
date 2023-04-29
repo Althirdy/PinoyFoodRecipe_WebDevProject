@@ -1,0 +1,61 @@
+            <section class="image_description">
+                <img src="https://www.panlasangpinoyrecipes.com/wp-content/uploads/2014/04/Litson-Manok-or-Lechon-Manok-Recipe1.jpg"
+                    alt="">
+                <div class="right_side">
+                    <h1>Lechon Manok</h1>
+                    <p>Lechon manok is a Filipino spit-roasted chicken dish made with chicken
+                        marinated in a mixture of garlic,bay leaf, onion, black pepper, soy sauce,
+                        and patis (fish sauce). The marinade may also be sweetened with
+                        muscovado or brown sugar.</p>
+                    <div class="info">
+                        <div class="info_icon">
+                            <img src="./icon/cooke_time.png" alt="">
+                            <h4>Prep Time</h4>
+                            <p>20 mins.</p>
+                        </div>
+                        <div class="info_icon">
+                            <img src="./icon/prep_time.png" alt="">
+                            <h4>Cook Time</h4>
+                            <p>30 mins.</p>
+                        </div>
+                        <div class="info_icon">
+                            <img src="./icon/servings.png" alt="">
+                            <h4>Servings</h4>
+                            <p>8 Servings</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ----------INGREDIENTS AND PROCEDURE -->
+            <section class="ingred_proced">
+                <div class="ingredients">
+                    <h2 class="ing_proc_h2">Ingredients</h2>
+                    <ul class="list-ingredients">
+                        <li>1 Piece Whole Chicken</li>
+                        <li>2 Sachets MAGGI® Magic Sarap®</li>
+                        <li>0.25 tsp Ground Pepper</li>
+                        <li>2 tbls Maggi® Soy Cooking And Seasoning Sauce</li>
+                        <li>1 tbl Brown Sugar</li>
+                        <li>1 Head Garlic</li>
+                        <li>2 Stalks Lemongrass</li>
+                    </ul>
+                </div>
+                <div class="procedure">
+                    <h2 class="ing_proc_h2">Procedure</h2>
+                    <div class="steps">
+                        <h4>Step 1</h4>
+                        <p>Marinate chicken with MAGGI® MAGIC SARAP®, pepper, soy souce, sugar,
+                            garlic and lemongrass overnight in the refrigerator.</p>
+                    </div>
+                    <div class="steps">
+                        <h4>Step 2</h4>
+                        <p>Remove chicken from the refrigerator 1 hour before cooking. Truss with butcher’s twine
+                            and transfer into a roasting pan.</p>
+                    </div>
+                    <div class="steps">
+                        <h4>Step 3</h4>
+                        <p>Roast in a 350°F preheated oven for 1 hour 15 minutes. Remove from the oven and
+                            set aside to rest. Cut into serving pieces and baste with the drippings. Serve immediately.
+                        </p>
+                    </div>
+                </div>

@@ -1,6 +1,7 @@
 import Data from "./Data/data.mjs";
 
-const data =Data
+
+const data = Data
 
 const selector = (name) => {
     const base = document.querySelector(`${name}`)
@@ -14,7 +15,7 @@ var interval = 1000;
 const nav = selector("nav")
 const lunch_show = selector(".lunch")
 const breakfast_show = selector(".breakfast")
-const dinner_show=selector(".dinner")
+const dinner_show = selector(".dinner")
 //----------------live count
 
 count.forEach(n => {
@@ -58,7 +59,7 @@ window.addEventListener("scroll", () => {
 const display_dishes = (start, end, classGlide) => {
     const show = data.slice(start, end)
     const show_display = show.map(n => (
-    `<div class="Card" id=${n.id} >
+        `<div class="Card" id=${n.id} >
              <img src="${n.image}" alt="" class="dishes">
              <h3>${n.dish}</h3>
              <p>${n.servings}</p>
@@ -74,14 +75,65 @@ const display_dishes = (start, end, classGlide) => {
 
 display_dishes(10, 20, breakfast_show);
 display_dishes(0, 10, lunch_show)
-display_dishes(20,30,dinner_show)
+display_dishes(20, 30, dinner_show)
 // ----------------TESTING FOR CLICK
 
 const card = document.querySelectorAll(".Card");
 
 card.forEach(n => {
     n.addEventListener('click', () => {
-        location.href='recipe.html'
+        var result = data.find(val => val.id == n.id);
+        var ingredient = result.ingredients.map(n => (
+            `<li>${n}</li>`
+        ))
+        var step = result.steps.map(n => (
+            `<div class="steps">
+                     <h4>Step ${result.steps.indexOf(n) + 1}</h4>
+                     <p>${n}</p>
+            </div>`
+        ))
+        var html = `<section class="image_description">
+        <img src=${result.image}
+            alt="">
+        <div class="right_side">
+            <h1>${result.dish}</h1>
+            <p>${result.description}</p>
+            <div class="info">
+                <div class="info_icon">
+                    <img src="./icon/cooke_time.png" alt="">
+                    <h4>Prep Time</h4>
+                    <p>${result.prep_time}</p>
+                </div>
+                <div class="info_icon">
+                    <img src="./icon/prep_time.png" alt="">
+                    <h4>Cook Time</h4>
+                    <p>${result.cook_time}</p>
+                </div>
+                <div class="info_icon">
+                    <img src="./icon/servings.png" alt="">
+                    <h4>Servings</h4>
+                    <p>${result.servings}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------INGREDIENTS AND PROCEDURE -->
+    <section class="ingred_proced">
+        <div class="ingredients">
+            <h2 class="ing_proc_h2">Ingredients</h2>
+            <ul class="list-ingredients">
+                ${ingredient.join('')}
+            </ul>
+        </div>
+        <div class="procedure">
+            <h2 class="ing_proc_h2">Procedure</h2>
+            ${step.join('')}
+           
+        </div>
+        </section>`
+        localStorage.setItem("page",html)
+        location.href="recipe.html"
+
     })
 
 })
@@ -183,4 +235,4 @@ function glid(class_for_glide, dots) {
 
 glid("lunch", "dots_lunch") //lunch
 glid("breakfast", "dots_breakfast")//breakfast
-glid("dinner","dots_dinner")//dinner 
+glid("dinner", "dots_dinner")//dinner 

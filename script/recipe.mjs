@@ -12,9 +12,12 @@ const selector = (name) => {
 console.log(data)
 const nav = selector("nav")
 const feature = selector(".featured_dish")
+const recipe = selector(".hero_section")
+
+recipe.innerHTML = localStorage.getItem("page")
+
 // NAVBAR HIDE 
 var lasttop = window.scrollY
-
 
 window.addEventListener("scroll", () => {
     if (lasttop < window.scrollY) {
