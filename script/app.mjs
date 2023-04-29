@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
 const display_dishes = (start, end, classGlide) => {
     const show = data.slice(start, end)
     const show_display = show.map(n => (
-        `<div class="Card" id=${n.id} >
+        `<div class="Card main" id=${n.id} >
              <img src="${n.image}" alt="" class="dishes">
              <h3>${n.dish}</h3>
              <p>${n.servings}</p>
@@ -78,7 +78,7 @@ display_dishes(0, 10, lunch_show)
 display_dishes(20, 30, dinner_show)
 // ----------------TESTING FOR CLICK
 
-const card = document.querySelectorAll(".Card");
+const card = document.querySelectorAll(".main");
 
 card.forEach(n => {
     n.addEventListener('click', () => {

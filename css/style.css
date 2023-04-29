@@ -272,7 +272,7 @@ nav {
     .navbar {
         position: absolute;
         width: 100%;
-        background-color: rgb(32, 31, 31);
+        background-color: var(--nav-color);
         height: 40vh;
         display: flex;
         gap: 1rem;
@@ -354,7 +354,7 @@ nav {
     .navbar {
         position: absolute;
         width: 100%;
-        background-color: rgb(32, 31, 31);
+        background-color: var(--nav-color);
         height: 30vh;
         display: flex;
         gap: 1rem;
@@ -367,8 +367,12 @@ nav {
         transition: all 500ms ease-in-out;
     }
 
+    
     .show {
         transform: translateY(30%);
+    }
+    .show>a{
+        padding-bottom: .2rem;
     }
 
     .toggle {
