@@ -1,0 +1,475 @@
+675 x 547
+
+
+
+ JTextField grade[] = {grade_1, grade_2, grade_3, grade_4, grade_5, grade_6, grade_7, grade_8, grade_9, grade_10};
+        JTextField unit[] = {unit_1, unit_2, unit_3, unit_4, unit_5, unit_6, unit_7, unit_8, unit_9, unit_10};
+        double grade_score[] = new double[k];
+        int unit_score[] = new int[k];
+        double unit_grade = 0;
+        double sum_unit = 0;
+
+        try {
+
+            for (int i = 0; i < k; i++) {
+                if (grade[i].getText().length() <= 4 && unit[i].getText().length() == 1) {
+
+                    grade_score[i] = Double.parseDouble(grade[i].getText());
+                    unit_score[i] = Integer.parseInt(unit[i].getText());
+                } else {
+                    JOptionPane.showMessageDialog(null, "GRADE OR UNITS ERROR!");
+                }
+            }
+            for (int i = 0; i < k; i++) {
+                unit_grade += (grade_score[i] * unit_score[i]);
+                sum_unit += unit_score[i];
+            }
+            double GWA = unit_grade / sum_unit;
+
+            jLabel47.setText(Double.toString(GWA));
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Enter Valid number");
+        }
+
+
+
+
+//------Hide
+
+ hide();
+        jLabel47.setText("");
+
+//------
+ JTextField grade[] = {grade_1, grade_2, grade_3, grade_4, grade_5, grade_6, grade_7, grade_8, grade_9, grade_10};
+        JTextField unit[] = {unit_1, unit_2, unit_3, unit_4, unit_5, unit_6, unit_7, unit_8, unit_9, unit_10};
+        try {
+            k = Integer.parseInt(course.getText());
+            if (k > 0 && k <= 10) {
+                for (int i = 0; i < k; i++) {
+                    grade[i].show();
+                    unit[i].show();
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Enter Valid number 1-10");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Enter Valid number");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ */
+package Pages_component;
+
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+
+public class Calc extends javax.swing.JPanel {
+
+    
+    public Calc() {
+        initComponents();
+        hide();
+    }
+    int k = 0;
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        calculator = new javax.swing.JPanel();
+        course = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        grade_1 = new javax.swing.JTextField();
+        unit_1 = new javax.swing.JTextField();
+        grade_2 = new javax.swing.JTextField();
+        unit_2 = new javax.swing.JTextField();
+        unit_3 = new javax.swing.JTextField();
+        grade_3 = new javax.swing.JTextField();
+        unit_4 = new javax.swing.JTextField();
+        grade_4 = new javax.swing.JTextField();
+        grade_6 = new javax.swing.JTextField();
+        unit_6 = new javax.swing.JTextField();
+        unit_7 = new javax.swing.JTextField();
+        grade_7 = new javax.swing.JTextField();
+        unit_8 = new javax.swing.JTextField();
+        grade_8 = new javax.swing.JTextField();
+        unit_9 = new javax.swing.JTextField();
+        grade_9 = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        grade_5 = new javax.swing.JTextField();
+        unit_5 = new javax.swing.JTextField();
+        grade_10 = new javax.swing.JTextField();
+        unit_10 = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        panelBackground2 = new Components.PanelBackground();
+        jLabel3 = new javax.swing.JLabel();
+        panelBackground1 = new Components.PanelBackground();
+        jLabel2 = new javax.swing.JLabel();
+
+        setOpaque(false);
+
+        calculator.setBackground(new java.awt.Color(241, 241, 251));
+        calculator.setOpaque(false);
+        calculator.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        course.setBackground(new java.awt.Color(255, 255, 255));
+        course.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        course.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        course.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        calculator.add(course, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 45, -1));
+
+        jLabel1.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("How many Course do you have?");
+        calculator.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        grade_1.setBackground(new java.awt.Color(34, 24, 24));
+        grade_1.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_1.setForeground(new java.awt.Color(255, 255, 255));
+        grade_1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 45, -1));
+
+        unit_1.setBackground(new java.awt.Color(34, 24, 24));
+        unit_1.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_1.setForeground(new java.awt.Color(255, 255, 255));
+        unit_1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 45, -1));
+
+        grade_2.setBackground(new java.awt.Color(34, 24, 24));
+        grade_2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_2.setForeground(new java.awt.Color(255, 255, 255));
+        grade_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 45, -1));
+
+        unit_2.setBackground(new java.awt.Color(34, 24, 24));
+        unit_2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_2.setForeground(new java.awt.Color(255, 255, 255));
+        unit_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 45, -1));
+
+        unit_3.setBackground(new java.awt.Color(34, 24, 24));
+        unit_3.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_3.setForeground(new java.awt.Color(255, 255, 255));
+        unit_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 45, -1));
+
+        grade_3.setBackground(new java.awt.Color(34, 24, 24));
+        grade_3.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_3.setForeground(new java.awt.Color(255, 255, 255));
+        grade_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 45, -1));
+
+        unit_4.setBackground(new java.awt.Color(34, 24, 24));
+        unit_4.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_4.setForeground(new java.awt.Color(255, 255, 255));
+        unit_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 45, -1));
+
+        grade_4.setBackground(new java.awt.Color(34, 24, 24));
+        grade_4.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_4.setForeground(new java.awt.Color(255, 255, 255));
+        grade_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 45, -1));
+
+        grade_6.setBackground(new java.awt.Color(34, 24, 24));
+        grade_6.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_6.setForeground(new java.awt.Color(255, 255, 255));
+        grade_6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 45, -1));
+
+        unit_6.setBackground(new java.awt.Color(34, 24, 24));
+        unit_6.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_6.setForeground(new java.awt.Color(255, 255, 255));
+        unit_6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 45, -1));
+
+        unit_7.setBackground(new java.awt.Color(34, 24, 24));
+        unit_7.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_7.setForeground(new java.awt.Color(255, 255, 255));
+        unit_7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 210, 45, -1));
+
+        grade_7.setBackground(new java.awt.Color(34, 24, 24));
+        grade_7.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_7.setForeground(new java.awt.Color(255, 255, 255));
+        grade_7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 45, -1));
+
+        unit_8.setBackground(new java.awt.Color(34, 24, 24));
+        unit_8.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_8.setForeground(new java.awt.Color(255, 255, 255));
+        unit_8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, 45, -1));
+
+        grade_8.setBackground(new java.awt.Color(34, 24, 24));
+        grade_8.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_8.setForeground(new java.awt.Color(255, 255, 255));
+        grade_8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 45, -1));
+
+        unit_9.setBackground(new java.awt.Color(34, 24, 24));
+        unit_9.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_9.setForeground(new java.awt.Color(255, 255, 255));
+        unit_9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 45, -1));
+
+        grade_9.setBackground(new java.awt.Color(34, 24, 24));
+        grade_9.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_9.setForeground(new java.awt.Color(255, 255, 255));
+        grade_9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 45, -1));
+
+        jLabel27.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("Grade");
+        calculator.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, 22));
+
+        jLabel28.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setText("Grade");
+        calculator.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, 22));
+
+        jLabel29.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("Units");
+        calculator.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, -1, 22));
+
+        jLabel30.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("Units");
+        calculator.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, -1, 22));
+
+        grade_5.setBackground(new java.awt.Color(34, 24, 24));
+        grade_5.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_5.setForeground(new java.awt.Color(255, 255, 255));
+        grade_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 45, -1));
+
+        unit_5.setBackground(new java.awt.Color(34, 24, 24));
+        unit_5.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_5.setForeground(new java.awt.Color(255, 255, 255));
+        unit_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 45, -1));
+
+        grade_10.setBackground(new java.awt.Color(34, 24, 24));
+        grade_10.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        grade_10.setForeground(new java.awt.Color(255, 255, 255));
+        grade_10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        grade_10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(grade_10, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 45, -1));
+
+        unit_10.setBackground(new java.awt.Color(34, 24, 24));
+        unit_10.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        unit_10.setForeground(new java.awt.Color(255, 255, 255));
+        unit_10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        unit_10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(34, 24, 24), 2));
+        calculator.add(unit_10, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 340, 45, -1));
+
+        jLabel47.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        calculator.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 390, 70, 40));
+
+        panelBackground2.setBackground(new java.awt.Color(34, 24, 24));
+        panelBackground2.setRound(30);
+
+        jLabel3.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Compute");
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelBackground2Layout = new javax.swing.GroupLayout(panelBackground2);
+        panelBackground2.setLayout(panelBackground2Layout);
+        panelBackground2Layout.setHorizontalGroup(
+            panelBackground2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        panelBackground2Layout.setVerticalGroup(
+            panelBackground2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+        );
+
+        calculator.add(panelBackground2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 66, -1, 40));
+
+        panelBackground1.setBackground(new java.awt.Color(34, 24, 24));
+        panelBackground1.setRound(30);
+
+        jLabel2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Compute");
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelBackground1Layout = new javax.swing.GroupLayout(panelBackground1);
+        panelBackground1.setLayout(panelBackground1Layout);
+        panelBackground1Layout.setHorizontalGroup(
+            panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        panelBackground1Layout.setVerticalGroup(
+            panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+        );
+
+        calculator.add(panelBackground1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, -1, 40));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(calculator, javax.swing.GroupLayout.PREFERRED_SIZE, 684, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(calculator, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+    }// </editor-fold>                        
+    public void hide() {
+        JTextField grade[] = {grade_1, grade_2, grade_3, grade_4, grade_5, grade_6, grade_7, grade_8, grade_9, grade_10};
+        JTextField unit[] = {unit_1, unit_2, unit_3, unit_4, unit_5, unit_6, unit_7, unit_8, unit_9, unit_10};
+        for (JTextField l : grade) {
+            l.hide();
+        }
+        for (JTextField l : unit) {
+            l.hide();
+        }
+    }
+    
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {                                     
+         JTextField grade[] = {grade_1, grade_2, grade_3, grade_4, grade_5, grade_6, grade_7, grade_8, grade_9, grade_10};
+        JTextField unit[] = {unit_1, unit_2, unit_3, unit_4, unit_5, unit_6, unit_7, unit_8, unit_9, unit_10};
+        double grade_score[] = new double[k];
+        int unit_score[] = new int[k];
+        double unit_grade = 0;
+        double sum_unit = 0;
+
+        try {
+
+            for (int i = 0; i < k; i++) {
+                if (grade[i].getText().length() <= 4 && unit[i].getText().length() == 1) {
+
+                    grade_score[i] = Double.parseDouble(grade[i].getText());
+                    unit_score[i] = Integer.parseInt(unit[i].getText());
+                } else {
+                    JOptionPane.showMessageDialog(null, "GRADE OR UNITS ERROR!");
+                }
+            }
+            for (int i = 0; i < k; i++) {
+                unit_grade += (grade_score[i] * unit_score[i]);
+                sum_unit += unit_score[i];
+            }
+            double GWA = unit_grade / sum_unit;
+
+            jLabel47.setText(Double.toString(GWA));
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Enter Valid number");
+        }
+
+
+    }                                    
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {                                     
+        JTextField grade[] = {grade_1, grade_2, grade_3, grade_4, grade_5, grade_6, grade_7, grade_8, grade_9, grade_10};
+        JTextField unit[] = {unit_1, unit_2, unit_3, unit_4, unit_5, unit_6, unit_7, unit_8, unit_9, unit_10};
+        try {
+            k = Integer.parseInt(course.getText());
+            if (k > 0 && k <= 10) {
+                for (int i = 0; i < k; i++) {
+                    grade[i].show();
+                    unit[i].show();
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Enter Valid number 1-10");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Enter Valid number");
+        }
+    }                                    
+
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JPanel calculator;
+    private javax.swing.JTextField course;
+    private javax.swing.JTextField grade_1;
+    private javax.swing.JTextField grade_10;
+    private javax.swing.JTextField grade_2;
+    private javax.swing.JTextField grade_3;
+    private javax.swing.JTextField grade_4;
+    private javax.swing.JTextField grade_5;
+    private javax.swing.JTextField grade_6;
+    private javax.swing.JTextField grade_7;
+    private javax.swing.JTextField grade_8;
+    private javax.swing.JTextField grade_9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel47;
+    private Components.PanelBackground panelBackground1;
+    private Components.PanelBackground panelBackground2;
+    private javax.swing.JTextField unit_1;
+    private javax.swing.JTextField unit_10;
+    private javax.swing.JTextField unit_2;
+    private javax.swing.JTextField unit_3;
+    private javax.swing.JTextField unit_4;
+    private javax.swing.JTextField unit_5;
+    private javax.swing.JTextField unit_6;
+    private javax.swing.JTextField unit_7;
+    private javax.swing.JTextField unit_8;
+    private javax.swing.JTextField unit_9;
+    // End of variables declaration                   
+}

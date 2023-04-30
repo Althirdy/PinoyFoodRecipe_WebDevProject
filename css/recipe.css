@@ -175,9 +175,10 @@ body {
 
 
 
+
 /* ---------Media query */
 
-@media screen and (min-width:991px){
+@media screen and (min-width:900px){
     .image_description{
         flex-direction: row;
         gap: 3rem;
@@ -201,6 +202,25 @@ body {
     .steps{
         text-align: start;
     }
+    /* ABOUT */
+    .about{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .left_side>h1{
+        font-size: 2.5rem;
+    }
+    .left_side>p{
+        font-size: 1.2rem;
+    }
+    .category{
+        flex-direction: column;
+    }
+    #tapsilog{
+        display: flex;
+    }
+   
 }
 
 @media screen and (min-width: 1024px) {
@@ -238,6 +258,42 @@ body {
     }
     .procedure{
         width: 700px;
+    }
+    .category{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 0;
+    }
+    /* -------------- */
+    .left_side>h1{
+        font-size: 3.5rem;
+    }
+    .left_side>p{
+        font-size: 1.5rem;
+    }
+    .first{
+        display: flex;
+    }
+    .first>h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #tapsilog{
+        right: 0;
+        top: 0;
+    }
+    #tortang_talong{
+        left: 30%;
+        top: -5%;
+    }
+    #pritong_manok{
+        right: 0;
+        top: 50%;
+    }
+    #adobong_sitaw{
+        left: 30%;
+        top: 40%;
     }
 
 }
