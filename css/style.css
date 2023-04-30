@@ -277,9 +277,10 @@ nav {
 }
 .left_side>h1{
     color: var(--secondary-text-color);
-    font-size: 2.5rem;
+    font-size: 2.6rem;
 }
 .left_side>p{
+    font-size: 1.2rem;
     color: var(--tertiary-txt-color);
     font-weight: var(--txt-weight-regular);
     text-align: center;
