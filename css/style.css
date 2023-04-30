@@ -226,7 +226,7 @@ nav {
     color: var(--secondary-text-color);
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-block: 1.5rem;
 }
 .Card{
     width: 20%;

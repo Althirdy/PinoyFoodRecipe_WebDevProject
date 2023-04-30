@@ -11,10 +11,13 @@
         href="https://o.remove.bg/downloads/aed24167-8ec9-4ed7-88f8-7ad74b898a19/image-removebg-preview.png">
     <!-- GLIDER -->
     <link rel="stylesheet" href="./css/glider.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- SECONDARY CSS -->
     <link rel="stylesheet" href="./css/recipe.css">
+
 </head>
 
 <body>
@@ -32,7 +35,7 @@
                 <a href="#Her_section">
                     <li>Home</li>
                 </a>
-                <a href="#about">
+                <a href="#about_s">
                     <li>About</li>
                 </a>
                 <a href="#recipe">
@@ -50,7 +53,7 @@
                     From adobo to kare-kare, indulge in our authentic
                     Filipino dish recipes.</p>
                 <div class="btn_container">
-                    <a href="#" class="btn btn_about">About us</a>
+                    <a href="#about_s" class="btn btn_about">About us</a>
                     <a href="#recipe" class="btn btn_rec">Dishes</a>
                 </div>
             </div>
@@ -73,8 +76,8 @@
         </main>
         <!--End of Hero Section  -->
         <!-- -------About -->
-        <section class="about" id="#about">
-            <div class="left_side">
+        <section class="about" id="about_s">
+            <div class="left_side" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
                 <h1>Filipino Cuisine</h1>
                 <p>Our menu features traditional
                     dishes</p>
@@ -84,7 +87,7 @@
                     Philippines. Come and taste the difference!</p>
             </div>
             <!-- ---------------- -->
-            <div class="right_side">
+            <div class="right_side" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                 <div class="category">
                     <h3 class="break">Breakfast</h3>
                     <h3>Lunch</h3>
@@ -119,10 +122,10 @@
         </section>
 
         <!---------RECIPES Section -->
-        <section class="recipe" id="recipe">
+        <section class="recipe" id="recipe" >
             <!-- Breakfast -->
-            <h1>Breakfast</h1>
-            <div class="glider-contain">
+            <h1 data-aos="fade-up">Breakfast</h1>
+            <div class="glider-contain" data-aos="fade-up">
                 <div class="glider breakfast">
 
                 </div>
@@ -131,9 +134,9 @@
             </div>
             <!-- End of Breakfast -->
             <!-- Lunch -->
-            <h1>Lunch</h1>
+            <h1 data-aos="fade-up">Lunch</h1>
             <div class="glider-contain">
-                <div class="glider lunch">
+                <div class="glider lunch" data-aos="fade-up">
 
                 </div>
 
@@ -141,9 +144,9 @@
             </div>
             <!-- End of lunch -->
             <!-- dinner -->
-            <h1>Dinner</h1>
+            <h1 data-aos="fade-up">Dinner</h1>
             <div class="glider-contain">
-                <div class="glider dinner">
+                <div class="glider dinner" data-aos="fade-up">
 
                 </div>
 
@@ -155,6 +158,12 @@
         <!----------end of recipe -->
 
     </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- MAIN JS -->
     <script src="./script/app.mjs" type="module">
     </script>
     <script src="./Library_glider/glider.min.js"></script>

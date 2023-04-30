@@ -60,8 +60,8 @@ featured.forEach(n=>{
         ))
         var html = `<section class="image_description">
         <img src=${result.image}
-            alt="">
-        <div class="right_side">
+            alt="" >
+        <div class="right_side" >
             <h1>${result.dish}</h1>
             <p>${result.description}</p>
             <div class="info">

@@ -12,6 +12,9 @@
         href="https://o.remove.bg/downloads/aed24167-8ec9-4ed7-88f8-7ad74b898a19/image-removebg-preview.png">
     <!-- Glider -->
     <link rel="stylesheet" href="./css/glider.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="./css/recipe.css">
 </head>
@@ -38,14 +41,14 @@
                 </a>
             </ul>
         </nav>
-        <main class="hero_section">
+        <main class="hero_section" data-aos="zoom-in-down">
 
             <!-- END OF INGRE AND PROCE -->
         </main>
         <section class="featured">
             <h1 class="s">Featured Dishes</h1>
             <div class="glider-contain">
-                <div class="glider featured_dish">
+                <div class="glider featured_dish" data-aos="fade-up">
 
                 </div>
 
@@ -59,7 +62,16 @@
 
     </div>
 
-    <script src="./script/app.mjs"  type="module">
+
+
+
+
+     <!-- AOS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+         AOS.init();
+     </script>
+    <script src="./script/app.mjs" defer type="module">
     </script>
     <script src="./script/recipe.mjs" defer type="module"></script>
     <script src="./Library_glider/glider.min.js"></script>
