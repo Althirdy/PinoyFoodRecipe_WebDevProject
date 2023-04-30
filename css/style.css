@@ -149,7 +149,6 @@ nav {
 
 .btn{
     border: none;
-    padding: 8px 15px;
     border-radius: 20px;
     font-weight: var(--txt-weight-SemiBold);
     cursor: pointer;
@@ -160,6 +159,8 @@ nav {
     background-color: var(--main-text-color);
     color: var(--secondary-text-color);
     transition: color 100ms ease-in-out;
+    padding: 8px 15px;
+
 }
 
 
@@ -167,6 +168,8 @@ nav {
     background-color: var(--nav-color);
     color: var(--main-text-color);
     transition: color 100ms ease-in-out;
+    padding: 8px 20px;
+
 }
 
 .btn_about:hover{
