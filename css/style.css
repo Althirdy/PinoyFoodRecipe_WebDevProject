@@ -284,6 +284,7 @@ nav {
 }
 .left_side>p{
     font-size: 1.2rem;
+    padding-inline: .3rem;
     color: var(--tertiary-txt-color);
     font-weight: var(--txt-weight-regular);
     text-align: center;
@@ -334,6 +335,11 @@ nav {
     justify-content: end;
     padding: 1.6rem;
     display: none;
+    transition: transform 3ms ease-in-out;
+}
+
+.first:hover{
+    transform: scale(1.5);
 }
 .first>.img{
     width: 140px;
