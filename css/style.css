@@ -338,9 +338,7 @@ nav {
     transition: transform 3ms ease-in-out;
 }
 
-.first:hover{
-    transform: scale(1.5);
-}
+
 .first>.img{
     width: 140px;
     height: 140px;
