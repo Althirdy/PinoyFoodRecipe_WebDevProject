@@ -112,7 +112,9 @@ nav {
 /* --------END NAVBAR */
 
 /* ------- Main(Hero_ section) Start */
-
+#Hero_section{
+    padding-top: 5vh;
+}
 .bg {
     height: 70vh;
     background-image: url(../icon/images/hero_bg.png);
