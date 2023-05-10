@@ -391,7 +391,7 @@
 
   steps: ['Pour-in water in a pot and bring to a boil', 'Add salt and whole peppercorn', 'Put-in the pig’s ears and pork belly then simmer until tender (about 30 mins to 1 hour)', 'Pour cooking oil on a separate pan and allow to heat', 'When the oil is hot enough, deep-fry the tofu until color turns golden brown and outer texture is somewhat crispy',
     'Cube the fried tofu and slice the boiled pigs ears and pork belly into bite-sized pieces then set aside', 'Combine the sugar, salt, soy sauce, and vinegar in bowl. Stir.', 'Microwave for 1 minute.', 'Add the ground black pepper, onions, green onions, and chili pepper. Transfer the sauce in a serving bowl.', 'Place the sliced meat and tofu in a serving plate with the bowl of sauce by the side', 'Serve hot! Share and Enjoy!'],
-  image: 'https://www.ajinomoto.com.ph/web/wp-content/uploads/2019/02/Tokwat-Baboy.jpg',
+  image: 'https://i.ytimg.com/vi/H0US0V5Poxs/maxresdefault.jpg',
 },
 {
   id: 22,
@@ -423,7 +423,7 @@
     'Saute the garlic, onion, and tomato', 'Add the ampalaya mix well with the other ingredients',
     'Put-in salt and pepper to taste', 'Beat the eggs and pour over the ampalaya then let the eggs cook partially', 'Mix the egg with the other ingredients',
     'Serve hot. Share and Enjoy!'],
-  image: 'https://www.ajinomoto.com.ph/ajinomoto-static/web/wp-content/uploads/2021/03/GINISANG-AMPALAYA-WITH-EGG-TOMATO-2.jpg',
+  image: 'https://www.foxyfolksy.com/wp-content/uploads/2021/06/bitter-melon-recipe.jpg',
 },
 {
   id: 24,
